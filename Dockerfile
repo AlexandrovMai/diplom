@@ -57,5 +57,5 @@ RUN  cd /opencv/opencv && mkdir build && \
     -D OPENCV_EXTRA_MODULES_PATH=/opencv/opencv_contrib/modules \
     -D BUILD_EXAMPLES=ON .. && make -j"$(nproc)" && make install && ldconfig
 
-WORKDIR /coord_get/
+WORKDIR /app
 CMD ["/bin/bash"]
